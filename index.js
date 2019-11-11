@@ -85,7 +85,7 @@ function makeSmartPerson(userName) {
       return num1 + num2;
     },
     speak: () => {
-      return 'Hello, my name is ' + outputObj.name;
+      return `Hello, my name is ${outputObj.name}`;
     }
   }
   return outputObj;
@@ -145,7 +145,9 @@ function get3rdCar(inventory) {
  * it will return `This is a Lincoln Navigator`.
  */
 function getCarInfoByIndex(inventory, index) {
-  /* code here */
+  const carMake = inventory[index].car_make;
+  const carModel = inventory[index].car_model;
+  return `This is a ${carMake} ${carModel}`;
 }
 
 /**
